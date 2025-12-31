@@ -1,5 +1,313 @@
-*{
-    margin:0 ;
+/* --- Global Reset --- */
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url("./assets/container_bg.png") ;
+}
+
+/* main  */
+
+.news-grid {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.ng-two {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+/* Main Feature Card */
+.news-main {
+    grid-row: span 2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.news-main img {
+    width: 100%;
+    display: block;
+}
+
+.news-main-text {
+    padding: 20px;
+    color: #fff;
+}
+
+.news-main h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Side Cards */
+.news-side,
+.news-card {
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.news-side img,
+.news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-side p,
+.news-card p {
+    padding: 15px;
+    font-size: 15px;
+}
+
+/* Colors */
+.purple { background: #7b4dd6; }
+.gray { background: #a3a3a3; color: #000; }
+.blue { background: #1fa4d9; }
+.dark { background: #2c2c2c; }
+.bright-blue { background: #0b4ddb; }
+.yellow { background: #e0aa23;}
+
+
+/* Hover Effect */
+.news-grid div:hover {
+    transform: translateY(-3px);
+    transition: 0.2s ease;
+}
+
+
+/* =========================
+   Utility Navigation
+========================= */
+.utility-nav {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+.utility-nav ul {
+    display: flex;
+    list-style: none;
+    max-width: 1200px;
+}
+
+.utility-nav li {
+    background: #fff;
+    padding: 5px 10px;
+    border-right: 1px solid #ddd;
+    margin-left: 3px;
+}
+
+.utility-nav img {
+    height: 45px;
+    display: block;
+}
+
+/* =========================
+   Main Navigation
+========================= */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+/* Nav Item Base */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 15px 20px;
+    flex: 1;
+    max-width: 140px;
+
+    text-align: center;
+    font-size: 14px;
+    color: #616161;
+
+    border-bottom: 5px solid transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-item i {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+#Pokédex img , #trad_card img {
+    width: 30px;
+    height: 30px;
+}    
+
+
+/* Active State */
+.nav-item.active {
+    background-color: #919191;
+    color: #fff;
+    border-bottom-color: #919191;
+}
+
+/* border State */
+.nav-item:nth-child(2) { border-bottom-color: #e3350d; } /* Pokédex */
+.nav-item:nth-child(3) { border-bottom-color: #ee6b2f; } /* Games */
+.nav-item:nth-child(4) { border-bottom-color: #e6bc2f; } /* TCG */
+.nav-item:nth-child(5) { border-bottom-color: #4dad5b; } /* Animation */
+.nav-item:nth-child(6) { border-bottom-color: #30a7d7; } /* Events */
+.nav-item:nth-child(7) { border-bottom-color: #1b53ba; } /* News */
+
+/* =========================
+   Hover Colors (Pokémon Style)
+========================= */
+
+.nav-item:nth-child(2):hover { background-color: #e3350d; color:white } /* Pokédex */
+.nav-item:nth-child(3):hover { background-color: #ee6b2f; color:white } /* Games */
+.nav-item:nth-child(4):hover { background-color: #e6bc2f; color:white } /* TCG */
+.nav-item:nth-child(5):hover { background-color: #4dad5b; color:white } /* Animation */
+.nav-item:nth-child(6):hover { background-color: #30a7d7; color:white } /* Events */
+.nav-item:nth-child(7):hover { background-color: #1b53ba; color:white } /* News */
+
+/* =========================
+   Footer
+========================= */
+.site-footer {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 60px 80px;
+    font-family: Arial, sans-serif;
+}
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter input,
+.newsletter select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+.newsletter .row {
+    display: flex;
+    gap: 15px;
+}
+
+.newsletter button {
+    padding: 14px;
+    width: 180px;
+    background: #8c8c8c;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer; 
+}
+
+    .newsletter-right p {
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.newsletter-right a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+    padding-top: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.social i {
+    font-size: 28px;
+}
+.social-logo img  {
+    width: 35px;
+    height: 34px;
+    background-color: white ;
+    padding: 4.2px 4.2px ;
+    
+}
+
+/* Legal */
+.legal img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.legal p {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* mobile responsive  */
+@media (max-width: 900px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-main {
+        grid-row: auto;
+    }
 }

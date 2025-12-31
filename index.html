@@ -1,12 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon CLone </title>
+    <title>Pokémon Clone</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    
+
+    <header>
+        <!-- Utility Navigation -->
+        <nav class="utility-nav">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <img src="./assets/logo-pokemon.png" alt="Pokémon Home">
+                    </a>
+                </li>
+                <li><a href="#"><img src="./assets/logo-shop.png" alt="Shop"></a></li>
+                <li><a href="#"><img src="./assets/about-us.png" alt="About Us"></a></li>
+                <li><a href="#"><img src="./assets/nav-pokemon.png" alt="Pokémon TCG"></a></li>
+                <li><a href="#"><img src="./assets/pokemon-legends.png" alt="Pokémon Legends"></a></li>
+                <li><a href="#"><img src="./assets/community-forums.png" alt="Community Forums"></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Navigation -->
+        <nav class="main-nav">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <div id="Pokédex"><img src="./assets/pokeball_gray.png" alt="pokeball_gray"></div>
+                <span>Pokédex</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Video Games & Apps</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <div id="trad_card"><img src="./assets/logo-Trading-Card-Game.png" alt="logo-Trading-Card-Game"></div>
+                <span>Trading Card Game</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-play"></i>
+                <span>Animation</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Play! Pokémon Events</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>News</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main COntent  -->
+    <section class="news-grid">
+        <div class="news-main yellow ng-two">
+            <img src="./assets/year-in-review.png" alt="Year in Review">
+            <div class="news-main-text">
+                <h2>The World of Pokémon’s 2025 Year in Review</h2>
+                <p>
+                    This past year was filled with all sorts of Pokémon fun!
+                    How many of these moments do you remember?
+                </p>
+            </div>
+        </div>
+
+        <div class="news-side purple">
+            <img src="./assets/pokemon-go.png" alt="">
+            <p>Pokémon GO 2026 New Year’s Event</p>
+        </div>
+
+        <div class="news-side gray">
+            <img src="./assets/artist-debuts-169-en.png" alt="">
+            <p>Pokémon TCG 2025 Artist Debuts</p>
+        </div>
+
+        <div class="news-card blue">
+            <img src="./assets/me2pt5-preview-cards-1-169-en.png" alt="">
+            <p>Let’s Look at Five Ascended Heroes Cards</p>
+        </div>
+
+        <div class="news-card dark">
+            <img src="./assets/champion-chat-169.png" alt="">
+            <p>Watch Champion Chat on YouTube</p>
+        </div>
+
+        <div class="news-card bright-blue">
+            <img src="./assets/pokemon-legends-z-a-34-en.png" alt="">
+            <p>Your New Mega Adventure Has Arrived</p>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="site-footer">
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="newsletter-left">
+                <h2>Sign up for Pokémon emails!</h2>
+
+                <input type="email" placeholder="Email">
+                <div class="row">
+                    <select>
+                        <option value="country">Select Country</option>
+
+                        <!-- North America -->
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+
+                        <!-- South America -->
+                        <option>Brazil</option>
+                        <option>Argentina</option>
+                        <option>Chile</option>
+                        <option>Colombia</option>
+                        <option>Peru</option>
+
+                        <!-- Europe -->
+                        <option>United Kingdom</option>
+                        <option>Ireland</option>
+                        <option>France</option>
+                        <option>Germany</option>
+                        <option>Italy</option>
+                        <option>Spain</option>
+                        <option>Portugal</option>
+                        <option>Netherlands</option>
+                        <option>Belgium</option>
+                        <option>Sweden</option>
+                        <option>Norway</option>
+                        <option>Denmark</option>
+                        <option>Finland</option>
+                        <option>Poland</option>
+                        <option>Austria</option>
+                        <option>Switzerland</option>
+
+                        <!-- Asia -->
+                        <option>Japan</option>
+                        <option>South Korea</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>Singapore</option>
+                        <option>Malaysia</option>
+                        <option>Thailand</option>
+                        <option>Philippines</option>
+                        <option>Indonesia</option>
+
+                        <!-- Oceania -->
+                        <option>Australia</option>
+                        <option>New Zealand</option>
+
+                        <!-- Middle East -->
+                        <option>United Arab Emirates</option>
+                        <option>Saudi Arabia</option>
+                        <option>Qatar</option>
+
+                        <!-- Africa -->
+                        <option>South Africa</option>
+                        <option>Nigeria</option>
+                        <option>Kenya</option>
+                        <option>Egypt</option>
+                    </select>
+
+                    <input type="date" placeholder="Birthday">
+                </div>
+
+                <button>SIGN UP</button>
+            </div>
+            <div class="newsletter-right">
+                <p>I’d like to receive emails about:</p>
+
+                <p>Pokémon video games, apps, and more</p>
+
+                <p>Pokémon Center (our official online shop)</p>
+
+                <p>
+                    I accept the Pokémon.com
+                    <a href="#">Terms of Use</a> and
+                    <a href="#">Privacy Notice</a>
+                </p>
+            </div>
+
+
+        </section>
+
+        <!-- Footer Links -->
+        <section class="footer-links">
+            <div class="footer-column">
+                <h3>The Pokémon Company</h3>
+                <a href="#">News</a>
+                <a href="#">Parents Guide</a>
+                <a href="#">Customer Service</a>
+                <a href="#">About Our Company</a>
+                <a href="#">Careers</a>
+                <a href="#">Select a Country/Region</a>
+                <a href="#">Press Site</a>
+            </div>
+
+            <div class="footer-column social">
+                <a href="#">
+                    <div class="social-logo"><img src="./assets/Facebook_Logo.png" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="social-logo"><img src="./assets/youtube-icon.webp" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="social-logo"><img src="./assets/insta-logo.png" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="social-logo"><img src="./assets/twitter-logo.png" alt=""></div>
+                </a>
+                <a href="#">
+                    <div class="social-logo"><img src="./assets/pinterest logo.png" alt=""></div>
+                </a>
+            </div>
+
+            <div class="footer-column legal">
+                <img src="./assets/thepokemoncompanyinternational-seal.png" alt="COPPA Safe Harbor">
+
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Cookie Page</a>
+                <a href="#">Legal Info</a>
+                <a href="#">Security</a>
+
+                <p class="copyright">
+                    ©2026 Pokémon. ©1995–2026 Nintendo / Creatures Inc. / GAME FREAK inc.
+                </p>
+            </div>
+        </section>
+    </footer>
+
 </body>
+
 </html>
