@@ -1,185 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokémon Clone</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header>
-        <!-- Utility Navigation -->
-        <nav class="utility-nav">
-            <ul>
-                <li class="active">
-                    <a href="#">
-                        <img src="./assets/logo-pokemon.png" alt="Pokémon Home">
-                    </a>
-                </li>
-                <li><a href="#"><img src="./assets/logo-shop.png" alt="Shop"></a></li>
-                <li><a href="#"><img src="./assets/about-us.png" alt="About Us"></a></li>
-                <li><a href="#"><img src="./assets/nav-pokemon.png" alt="Pokémon TCG"></a></li>
-                <li><a href="#"><img src="./assets/pokemon-legends.png" alt="Pokémon Legends"></a></li>
-                <li><a href="#"><img src="./assets/community-forums.png" alt="Community Forums"></a></li>
-            </ul>
-        </nav>
 
-        <!-- Main Navigation -->
-        <nav class="main-nav">
-            <a href="#" class="nav-item active">
-                <i class="fa-solid fa-house"></i>
-                <span>Home</span>
-            </a>
+    <!-- Utility Navigation -->
+    <nav class="utility-nav">
+        <ul>
+            <li class="active"><a href="#"><img src="./assets/logo-pokemon.png" alt="Pokémon Home"></a></li>
+            <li><a href="#"><img src="./assets/logo-shop.png" alt="Shop"></a></li>
+            <li><a href="#"><img src="./assets/about-us.png" alt="About Us"></a></li>
+            <li><a href="#"><img src="./assets/nav-pokemon.png" alt="Pokémon TCG"></a></li>
+            <li><a href="#"><img src="./assets/pokemon-legends.png" alt="Pokémon Legends"></a></li>
+            <li><a href="#"><img src="./assets/community-forums.png" alt="Community Forums"></a></li>
+        </ul>
+    </nav>
 
-            <a href="#" class="nav-item">
-                <div id="Pokédex"><img src="./assets/pokeball_gray.png" alt="pokeball_gray"></div>
-                <span>Pokédex</span>
-            </a>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <a href="#" class="nav-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
 
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-gamepad"></i>
-                <span>Video Games & Apps</span>
-            </a>
+        <a href="#" class="nav-item">
+            <img class="nav-icon" src="./assets/pokeball_gray.png" alt="Pokédex">
+            <span>Pokédex</span>
+        </a>
 
-            <a href="#" class="nav-item">
-                <div id="trad_card"><img src="./assets/logo-Trading-Card-Game.png" alt="logo-Trading-Card-Game"></div>
-                <span>Trading Card Game</span>
-            </a>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Video Games & Apps</span>
+        </a>
 
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-play"></i>
-                <span>Animation</span>
-            </a>
+        <a href="#" class="nav-item">
+            <img class="nav-icon" src="./assets/logo-Trading-Card-Game.png" alt="Trading Card Game">
+            <span>Trading Card Game</span>
+        </a>
 
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-trophy"></i>
-                <span>Play! Pokémon Events</span>
-            </a>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-play"></i>
+            <span>Animation</span>
+        </a>
 
-            <a href="#" class="nav-item">
-                <i class="fa-solid fa-newspaper"></i>
-                <span>News</span>
-            </a>
-        </nav>
-    </header>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Play! Pokémon Events</span>
+        </a>
 
-    <!-- Main COntent  -->
-    <section class="news-grid">
-        <div class="news-main yellow ng-two">
-            <img src="./assets/year-in-review.png" alt="Year in Review">
-            <div class="news-main-text">
-                <h2>The World of Pokémon’s 2025 Year in Review</h2>
-                <p>
-                    This past year was filled with all sorts of Pokémon fun!
-                    How many of these moments do you remember?
-                </p>
+        <a href="#" class="nav-item">
+            <i class="fa-solid fa-newspaper"></i>
+            <span>News</span>
+        </a>
+    </nav>
+
+
+<!-- News Grid -->
+<section class="news-grid">
+    <article class="news-main yellow span-2">
+        <img src="./assets/year-in-review.png" alt="Year in Review">
+        <div class="news-main-text">
+            <h2>The World of Pokémon’s 2025 Year in Review</h2>
+            <p>
+                This past year was filled with all sorts of Pokémon fun!
+                How many of these moments do you remember?
+            </p>
+        </div>
+    </article>
+
+    <article class="news-card purple">
+        <img src="./assets/pokemon-go.png" alt="">
+        <p>Pokémon GO 2026 New Year’s Event</p>
+    </article>
+
+    <article class="news-card gray">
+        <img src="./assets/artist-debuts-169-en.png" alt="">
+        <p>Pokémon TCG 2025 Artist Debuts</p>
+    </article>
+
+    <article class="news-card blue">
+        <img src="./assets/me2pt5-preview-cards-1-169-en.png" alt="">
+        <p>Let’s Look at Five Ascended Heroes Cards</p>
+    </article>
+
+    <article class="news-card dark">
+        <img src="./assets/champion-chat-169.png" alt="">
+        <p>Watch Champion Chat on YouTube</p>
+    </article>
+
+    <article class="news-card bright-blue">
+        <img src="./assets/pokemon-legends-z-a-34-en.png" alt="">
+        <p>Your New Mega Adventure Has Arrived</p>
+    </article>
+</section>
+
+<!-- Featured Pokémon -->
+<section class="featured-section">
+    <div class="featured-tab">
+        <i class="fa-solid fa-circle-dot"></i>
+        <span>Featured Pokémon</span>
+    </div>
+
+    <div class="pokemon-slider">
+        <div class="poke-card">
+            <span class="poke-number">950</span>
+            <img src="./assets/950.png" alt="Klawf">
+            <div class="poke-info-mini">Klawf</div>
+        </div>
+
+        <div class="poke-card">
+            <span class="poke-number">876</span>
+            <img src="./assets/876.png" alt="Indeedee">
+            <div class="poke-info-mini">Indeedee</div>
+        </div>
+
+        <div class="poke-card">
+            <span class="poke-number">256</span>
+            <img src="./assets/256.png" alt="Combusken">
+            <div class="poke-info-mini">Combusken</div>
+        </div>
+
+        <div class="poke-card">
+            <span class="poke-number">948</span>
+            <img src="./assets/948.png" alt="Toedscruel">
+            <div class="poke-info-mini">Toedscruel</div>
+        </div>
+
+        <div class="poke-card">
+            <span class="poke-number">322</span>
+            <img src="./assets/322.png" alt="Numel">
+            <div class="poke-info-mini">Numel</div>
+        </div>
+    </div>
+
+    <div class="explore-btn-container">
+        <button class="explore-btn">Explore More Pokémon</button>
+    </div>
+</section>
+
+<!-- What's New This Week -->
+<section class="news-section">
+    <h2 class="section-title">What's New This Week</h2>
+
+    <div class="news-grid-2">
+        <article class="news-card orange">
+            <img src="./assets/crimson-blaze.png" alt="Crimson Blaze">
+            <div class="card-content">
+                <h3>Charge Toward Victory with <em>Crimson Blaze</em>, Out Now in Pokémon TCG Pocket</h3>
+                <p>Expand your collection with more new Mega Evolution Pokémon ex and peek ahead at upcoming in-game events.</p>
             </div>
-        </div>
+        </article>
 
-        <div class="news-side purple">
-            <img src="./assets/pokemon-go.png" alt="">
-            <p>Pokémon GO 2026 New Year’s Event</p>
-        </div>
+        <article class="news-card green">
+            <img src="./assets/prize-pack.png" alt="Prize Pack">
+            <div class="card-content">
+                <h3>Get Play! Pokémon Prize Pack Series Eight at Play! Pokémon Stores</h3>
+                <p>Participate in events and earn these special Prize Packs featuring popular Pokémon TCG cards.</p>
+            </div>
+        </article>
 
-        <div class="news-side gray">
-            <img src="./assets/artist-debuts-169-en.png" alt="">
-            <p>Pokémon TCG 2025 Artist Debuts</p>
-        </div>
+        <article class="news-card light-blue">
+            <img src="./assets/ranked-battles.png" alt="Ranked Battles">
+            <div class="card-content">
+                <h3>Become a Legend in <em>Pokémon Legends: Z-A</em> Ranked Battles Season 4</h3>
+                <p>Take on players from around the world in real-time online battles to climb the ranks and earn useful in-game rewards.</p>
+            </div>
+        </article>
 
-        <div class="news-card blue">
-            <img src="./assets/me2pt5-preview-cards-1-169-en.png" alt="">
-            <p>Let’s Look at Five Ascended Heroes Cards</p>
-        </div>
+        <article class="news-card tan">
+            <img src="./assets/pokecology-169.png" alt="Pokecology Book">
+            <div class="card-content">
+                <h3>Take a New Look into the Lives of Pokémon</h3>
+                <p>Preorder the upcoming book, Pokécology: An Illustrated Guide to Pokémon Ecology, and get ready to learn about Pokémon in a whole new way.</p>
+            </div>
+        </article>
 
-        <div class="news-card dark">
-            <img src="./assets/champion-chat-169.png" alt="">
-            <p>Watch Champion Chat on YouTube</p>
-        </div>
+        <article class="news-card dark-grey">
+            <img src="./assets/mega-charizard.png" alt="Mega Charizard X">
+            <div class="card-content">
+                <h3>Maximize Strength and Swiftness with Mega Charizard X ex and Mega Lopunny ex</h3>
+                <p>Pokémon TCG expert Tord Reklev dives into a strategy that he debuted at the 2025 Stuttgart Regional Championships.</p>
+            </div>
+        </article>
 
-        <div class="news-card bright-blue">
-            <img src="./assets/pokemon-legends-z-a-34-en.png" alt="">
-            <p>Your New Mega Adventure Has Arrived</p>
-        </div>
-    </section>
+        <article class="news-card grey">
+            <img src="./assets/alpha-charizard.png" alt="Alpha Charizard">
+            <div class="card-content">
+                <h3>Fire Up Your <em>Pokémon Legends: Z-A</em> Team with Alpha Charizard</h3>
+                <p>Get this powerful Pokémon via Mystery Gift to celebrate the release of the Mega Dimension DLC adventure.</p>
+            </div>
+        </article>
 
-    <!-- Footer  -->
-    <footer class="site-footer">
+        <div class="view-all-card">
+            <div class="view-all-btn">View All News</div>
+            <div class="view-all-sub">Keep up with all the latest developments!</div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
         <!-- Newsletter Section -->
         <section class="newsletter">
             <div class="newsletter-left">
                 <h2>Sign up for Pokémon emails!</h2>
 
                 <input type="email" placeholder="Email">
-                <div class="row">
-                    <select>
-                        <option value="country">Select Country</option>
 
-                        <!-- North America -->
-                        <option>United States</option>
-                        <option>Canada</option>
-                        <option>Mexico</option>
-
-                        <!-- South America -->
-                        <option>Brazil</option>
-                        <option>Argentina</option>
-                        <option>Chile</option>
-                        <option>Colombia</option>
-                        <option>Peru</option>
-
-                        <!-- Europe -->
-                        <option>United Kingdom</option>
-                        <option>Ireland</option>
-                        <option>France</option>
-                        <option>Germany</option>
-                        <option>Italy</option>
-                        <option>Spain</option>
-                        <option>Portugal</option>
-                        <option>Netherlands</option>
-                        <option>Belgium</option>
-                        <option>Sweden</option>
-                        <option>Norway</option>
-                        <option>Denmark</option>
-                        <option>Finland</option>
-                        <option>Poland</option>
-                        <option>Austria</option>
-                        <option>Switzerland</option>
-
-                        <!-- Asia -->
-                        <option>Japan</option>
-                        <option>South Korea</option>
-                        <option>China</option>
-                        <option>India</option>
-                        <option>Singapore</option>
-                        <option>Malaysia</option>
-                        <option>Thailand</option>
-                        <option>Philippines</option>
-                        <option>Indonesia</option>
-
-                        <!-- Oceania -->
-                        <option>Australia</option>
-                        <option>New Zealand</option>
-
-                        <!-- Middle East -->
-                        <option>United Arab Emirates</option>
-                        <option>Saudi Arabia</option>
-                        <option>Qatar</option>
-
-                        <!-- Africa -->
-                        <option>South Africa</option>
-                        <option>Nigeria</option>
-                        <option>Kenya</option>
-                        <option>Egypt</option>
-                    </select>
-
-                    <input type="date" placeholder="Birthday">
+            <div class="row">
+                <select name="Country" >
+                    <option>Select Country</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                    <option>Japan</option>
+                    <option>United Kingdom</option>
+                    <option>Pakistan</option>
+                </select>
+                <input type="date" placeholder="Birthday">
                 </div>
 
-                <button>SIGN UP</button>
+            <button>SIGN UP</button>
             </div>
             <div class="newsletter-right">
                 <p>I’d like to receive emails about:</p>
@@ -194,12 +241,8 @@
                     <a href="#">Privacy Notice</a>
                 </p>
             </div>
-
-
-        </section>
-
-        <!-- Footer Links -->
-        <section class="footer-links">
+    </section>
+    <section class="footer-links">
             <div class="footer-column">
                 <h3>The Pokémon Company</h3>
                 <a href="#">News</a>
@@ -243,8 +286,7 @@
                 </p>
             </div>
         </section>
-    </footer>
+</footer>
 
 </body>
-
 </html>
