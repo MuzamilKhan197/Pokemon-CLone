@@ -69,7 +69,7 @@ body {
 }
 
 .nav-item span {
-color: #464646;
+    color: #464646;
 }
 
 .nav-item i,
@@ -87,20 +87,60 @@ color: #464646;
 }
 
 /* Nav Border Bottom Colour */
-.nav-item:nth-child(2) { border-bottom: 5px solid #e3350d;  }
-.nav-item:nth-child(3) { border-bottom: 5px solid #ee6b2f;  }
-.nav-item:nth-child(4) { border-bottom: 5px solid #e6bc2f;  }
-.nav-item:nth-child(5) { border-bottom: 5px solid #4dad5b;  }
-.nav-item:nth-child(6) { border-bottom: 5px solid #30a7d7;  }
-.nav-item:nth-child(7) { border-bottom: 5px solid #1b53ba;  }
+.nav-item:nth-child(2) {
+    border-bottom: 5px solid #e3350d;
+}
+
+.nav-item:nth-child(3) {
+    border-bottom: 5px solid #ee6b2f;
+}
+
+.nav-item:nth-child(4) {
+    border-bottom: 5px solid #e6bc2f;
+}
+
+.nav-item:nth-child(5) {
+    border-bottom: 5px solid #4dad5b;
+}
+
+.nav-item:nth-child(6) {
+    border-bottom: 5px solid #30a7d7;
+}
+
+.nav-item:nth-child(7) {
+    border-bottom: 5px solid #1b53ba;
+}
 
 /* Nav Colour Hover */
-.nav-item:nth-child(2):hover { background: #e3350d; color: #fff; }
-.nav-item:nth-child(3):hover { background: #ee6b2f; color: #fff; }
-.nav-item:nth-child(4):hover { background: #e6bc2f; color: #fff; }
-.nav-item:nth-child(5):hover { background: #4dad5b; color: #fff; }
-.nav-item:nth-child(6):hover { background: #30a7d7; color: #fff; }
-.nav-item:nth-child(7):hover { background: #1b53ba; color: #fff; }
+.nav-item:nth-child(2):hover {
+    background: #e3350d;
+    color: #fff;
+}
+
+.nav-item:nth-child(3):hover {
+    background: #ee6b2f;
+    color: #fff;
+}
+
+.nav-item:nth-child(4):hover {
+    background: #e6bc2f;
+    color: #fff;
+}
+
+.nav-item:nth-child(5):hover {
+    background: #4dad5b;
+    color: #fff;
+}
+
+.nav-item:nth-child(6):hover {
+    background: #30a7d7;
+    color: #fff;
+}
+
+.nav-item:nth-child(7):hover {
+    background: #1b53ba;
+    color: #fff;
+}
 
 /* =========================
    News Grid (Top)
@@ -154,18 +194,54 @@ color: #464646;
 /* =========================
    Colour Utilities
 ========================= */
-.yellow { background: #e0aa23; }
-.purple { background: #7b4dd6; }
-.gray { background: #a3a3a3; color: #000; }
-.blue { background: #1fa4d9; }
-.dark { background: #2c2c2c; }
-.bright-blue { background: #0b4ddb; }
-.orange { background: #ee6b2f; }
-.green { background: #4dad5b; }
-.light-blue { background: #30a7d7; }
-.tan { background: #bb9e72; }
-.dark-grey { background: #313131; }
-.grey { background: #a4a4a4; }
+.yellow {
+    background: #e0aa23;
+}
+
+.purple {
+    background: #7b4dd6;
+}
+
+.gray {
+    background: #a3a3a3;
+    color: #000;
+}
+
+.blue {
+    background: #1fa4d9;
+}
+
+.dark {
+    background: #2c2c2c;
+}
+
+.bright-blue {
+    background: #0b4ddb;
+}
+
+.orange {
+    background: #ee6b2f;
+}
+
+.green {
+    background: #4dad5b;
+}
+
+.light-blue {
+    background: #30a7d7;
+}
+
+.tan {
+    background: #bb9e72;
+}
+
+.dark-grey {
+    background: #313131;
+}
+
+.grey {
+    background: #a4a4a4;
+}
 
 /* =========================
    Featured Pokémon
@@ -209,7 +285,7 @@ color: #464646;
     position: absolute;
     top: 10px;
     font-size: 5rem;
-    color: rgba(0,0,0,0.1);
+    color: rgba(0, 0, 0, 0.1);
 }
 
 .poke-info-mini {
@@ -351,10 +427,10 @@ color: #464646;
     color: #fff;
     font-weight: bold;
     border-radius: 6px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-    .newsletter-right p {
+.newsletter-right p {
     margin-bottom: 15px;
     font-size: 14px;
 }
@@ -403,12 +479,13 @@ color: #464646;
 .social i {
     font-size: 28px;
 }
-.social-logo img  {
+
+.social-logo img {
     width: 35px;
     height: 34px;
-    background-color: white ;
-    padding: 4.2px 4.2px ;
-    
+    background-color: white;
+    padding: 4.2px 4.2px;
+
 }
 
 /* Legal */
@@ -421,4 +498,172 @@ color: #464646;
     font-size: 12px;
     margin-top: 10px;
     color: #ccc;
+}
+
+/* =========================
+   TABLET (max-width: 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+    /* Utility Nav */
+    .utility-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Main Nav */
+    .main-nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        max-width: none;
+        flex: 1 1 25%;
+    }
+
+    /* Top News Grid */
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+
+    .span-2 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    /* Featured Pokémon */
+    .pokemon-slider {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .poke-card {
+        flex: 1 1 33.33%;
+        height: 320px;
+    }
+
+    /* What's New */
+    .news-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE (max-width: 768px)
+========================= */
+@media (max-width: 768px) {
+
+    /* Main Nav – scrollable like Pokémon site */
+    .main-nav {
+        overflow-x: auto;
+    }
+
+    .nav-item {
+        /* flex: 0 0 auto; */
+        min-width: 140px;
+    }
+
+    /* Top News Grid */
+    .news-grid {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+    }
+
+    .news-card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .span-2 {
+        grid-column: span 1;
+    }
+
+    /* Featured Pokémon */
+    .featured-tab {
+        margin-left: 20px;
+    }
+
+    .poke-card {
+        flex: 1 1 50%;
+    }
+
+    .poke-card img {
+        height: 170px;
+    }
+
+    /* What's New */
+    .news-grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer */
+    .site-footer {
+        padding: 40px 30px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .social {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE (max-width: 480px)
+========================= */
+@media (max-width: 480px) {
+
+    .main-nav {
+        position: static;
+    }
+
+    .nav-item span {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .news-card img {
+        object-fit: cover;
+    }
+
+    .poke-card {
+        flex: 1 1 100%;
+    }
+
+    .poke-number {
+        font-size: 3.5rem;
+    }
+
+    .explore-btn-container {
+        text-align: center;
+    }
+
+    .explore-btn {
+        width: 100%;
+    }
+
+    .newsletter .row {
+        flex-direction: column;
+    }
+
+    .newsletter button {
+        width: 100%;
+    }
 }
